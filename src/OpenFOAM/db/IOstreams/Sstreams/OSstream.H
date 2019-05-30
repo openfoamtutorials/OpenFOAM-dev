@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -57,12 +57,6 @@ class OSstream
 
         fileName name_;
         ostream& os_;
-
-
-    // Private Member Functions
-
-        //- Disallow default bitwise assignment
-        void operator=(const OSstream&);
 
 
 public:
@@ -195,6 +189,12 @@ public:
 
             //- Print description of IOstream to Ostream
             virtual void print(Ostream&) const;
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const OSstream&) = delete;
 };
 
 

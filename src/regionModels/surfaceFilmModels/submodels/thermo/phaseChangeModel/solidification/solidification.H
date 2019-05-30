@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2013-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2013-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -58,11 +58,11 @@ class solidification
 {
     // Private member functions
 
-        //- Disallow default bitwise copy construct
-        solidification(const solidification&);
+        //- Disallow default bitwise copy construction
+        solidification(const solidification&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const solidification&);
+        void operator=(const solidification&) = delete;
 
 
 protected:

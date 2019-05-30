@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -113,11 +113,11 @@ class volPointInterpolation
             GeometricField<Type, pointPatchField, pointMesh>&
         ) const;
 
-        //- Disallow default bitwise copy construct
-        volPointInterpolation(const volPointInterpolation&);
+        //- Disallow default bitwise copy construction
+        volPointInterpolation(const volPointInterpolation&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const volPointInterpolation&);
+        void operator=(const volPointInterpolation&) = delete;
 
 
 public:

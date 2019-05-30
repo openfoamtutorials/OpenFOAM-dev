@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -159,11 +159,11 @@ class router
             DynamicList<label>& route
         ) const;
 
-        //- Disallow default bitwise copy construct
-        router(const router&);
+        //- Disallow default bitwise copy construction
+        router(const router&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const router&);
+        void operator=(const router&) = delete;
 
 
 public:

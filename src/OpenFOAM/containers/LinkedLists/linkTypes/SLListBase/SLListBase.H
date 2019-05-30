@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -78,14 +78,6 @@ private:
        //- Number of elements in in list
        label nElmts_;
 
-    // Private Member Functions
-
-        //- Disallow default bitwise copy construct
-        SLListBase(const SLListBase&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const SLListBase&);
-
 
 public:
 
@@ -105,6 +97,9 @@ public:
 
         //- Construct given initial entry
         inline SLListBase(link*);
+
+        //- Disallow default bitwise copy construction
+        SLListBase(const SLListBase&) = delete;
 
 
     //- Destructor
@@ -157,6 +152,13 @@ public:
             //- Transfer the contents of the argument into this List
             //  and annul the argument list.
             inline void transfer(SLListBase&);
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const SLListBase&) = delete;
+
 
     // STL iterator
 

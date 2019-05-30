@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -105,11 +105,11 @@ class cellFeatures
         void calcSuperFaces() const;
 
 
-        //- Disallow default bitwise copy construct
-        cellFeatures(const cellFeatures&);
+        //- Disallow default bitwise copy construction
+        cellFeatures(const cellFeatures&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const cellFeatures&);
+        void operator=(const cellFeatures&) = delete;
 
 public:
 

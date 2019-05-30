@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2016-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2016-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -116,9 +116,6 @@ class Sine
         //- Read the coefficients from the given dictionary
         void read(const dictionary& coeffs);
 
-        //- Disallow default bitwise assignment
-        void operator=(const Sine<Type>&);
-
 
 public:
 
@@ -150,6 +147,12 @@ public:
 
         //- Write in dictionary format
         virtual void writeData(Ostream& os) const;
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const Sine<Type>&) = delete;
 };
 
 

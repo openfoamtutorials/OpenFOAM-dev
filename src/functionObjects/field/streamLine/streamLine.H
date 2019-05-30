@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -224,11 +224,11 @@ private:
         //- Do all seeding and tracking
         void track();
 
-        //- Disallow default bitwise copy construct
-        streamLine(const streamLine&);
+        //- Disallow default bitwise copy construction
+        streamLine(const streamLine&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const streamLine&);
+        void operator=(const streamLine&) = delete;
 
 
 public:

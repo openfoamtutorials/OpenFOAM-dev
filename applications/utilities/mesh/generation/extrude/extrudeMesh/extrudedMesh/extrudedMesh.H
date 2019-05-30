@@ -63,7 +63,7 @@ class extrudedMesh
 
         //- Construct and return the extruded mesh points
         template<class FaceList, class PointField>
-        Xfer<pointField> extrudedPoints
+        pointField extrudedPoints
         (
             const PrimitivePatch<FaceList, PointField>& extrudePatch,
             const extrudeModel&
@@ -71,7 +71,7 @@ class extrudedMesh
 
         //- Construct and return the extruded mesh faces
         template<class FaceList, class PointField>
-        Xfer<faceList> extrudedFaces
+        faceList extrudedFaces
         (
             const PrimitivePatch<FaceList, PointField>& extrudePatch,
             const extrudeModel&
@@ -79,18 +79,18 @@ class extrudedMesh
 
         //- Construct and return the extruded mesh cells
         template<class FaceList, class PointField>
-        Xfer<cellList> extrudedCells
+        cellList extrudedCells
         (
             const PrimitivePatch<FaceList, PointField>& extrudePatch,
             const extrudeModel&
         );
 
 
-        //- Disallow default bitwise copy construct
-        extrudedMesh(const extrudedMesh&);
+        //- Disallow default bitwise copy construction
+        extrudedMesh(const extrudedMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const extrudedMesh&);
+        void operator=(const extrudedMesh&) = delete;
 
 
 public:

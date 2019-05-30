@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -198,11 +198,11 @@ class InteractionLists
         //- Write the referred wall faces out for debug
         void writeReferredWallFaces() const;
 
-        //- Disallow default bitwise copy construct
-        InteractionLists(const InteractionLists&);
+        //- Disallow default bitwise copy construction
+        InteractionLists(const InteractionLists&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const InteractionLists&);
+        void operator=(const InteractionLists&) = delete;
 
 
 public:

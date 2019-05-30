@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2016-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2016-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -92,11 +92,11 @@ class writeVTK
         template<class GeoField>
         UPtrList<const GeoField> lookupFields() const;
 
-        //- Disallow default bitwise copy construct
-        writeVTK(const writeVTK&);
+        //- Disallow default bitwise copy construction
+        writeVTK(const writeVTK&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const writeVTK&);
+        void operator=(const writeVTK&) = delete;
 
 
 public:

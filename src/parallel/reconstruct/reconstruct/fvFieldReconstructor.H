@@ -78,11 +78,11 @@ class fvFieldReconstructor
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        fvFieldReconstructor(const fvFieldReconstructor&);
+        //- Disallow default bitwise copy construction
+        fvFieldReconstructor(const fvFieldReconstructor&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const fvFieldReconstructor&);
+        void operator=(const fvFieldReconstructor&) = delete;
 
 
 public:

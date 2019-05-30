@@ -114,11 +114,11 @@ private:
         //- Initialise
         void initialise();
 
-        //- Disallow default bitwise copy construct
-        radiationModel(const radiationModel&);
+        //- Disallow default bitwise copy construction
+        radiationModel(const radiationModel&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const radiationModel&);
+        void operator=(const radiationModel&) = delete;
 
 
 public:

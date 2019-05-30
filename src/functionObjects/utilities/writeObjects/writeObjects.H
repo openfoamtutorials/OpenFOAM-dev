@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -129,11 +129,11 @@ private:
         //- Write the requested registered IO object
         virtual void writeObject(const regIOobject& obj);
 
-        //- Disallow default bitwise copy construct
-        writeObjects(const writeObjects&);
+        //- Disallow default bitwise copy construction
+        writeObjects(const writeObjects&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const writeObjects&);
+        void operator=(const writeObjects&) = delete;
 
 
 public:

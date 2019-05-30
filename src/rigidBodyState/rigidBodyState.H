@@ -86,11 +86,11 @@ class rigidBodyState
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        rigidBodyState(const rigidBodyState&);
+        //- Disallow default bitwise copy construction
+        rigidBodyState(const rigidBodyState&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const rigidBodyState&);
+        void operator=(const rigidBodyState&) = delete;
 
 
 protected:

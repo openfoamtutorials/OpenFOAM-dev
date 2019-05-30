@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -87,11 +87,11 @@ class extrude2DMesh
         //- Find extrusion direction
         // void findExtrudeDirection();
 
-        //- Disallow default bitwise copy construct
-        extrude2DMesh(const extrude2DMesh&);
+        //- Disallow default bitwise copy construction
+        extrude2DMesh(const extrude2DMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const extrude2DMesh&);
+        void operator=(const extrude2DMesh&) = delete;
 
 public:
 

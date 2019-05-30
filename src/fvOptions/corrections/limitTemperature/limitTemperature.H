@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2012-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2012-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -87,11 +87,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        limitTemperature(const limitTemperature&);
+        //- Disallow default bitwise copy construction
+        limitTemperature(const limitTemperature&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const limitTemperature&);
+        void operator=(const limitTemperature&) = delete;
 
 
 public:

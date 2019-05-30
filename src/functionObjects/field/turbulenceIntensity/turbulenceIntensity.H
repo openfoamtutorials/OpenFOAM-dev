@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2018-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -108,11 +108,11 @@ class turbulenceIntensity
         //- File header information
         virtual void writeFileHeader(const label i);
 
-        //- Disallow default bitwise copy construct
-        turbulenceIntensity(const turbulenceIntensity&);
+        //- Disallow default bitwise copy construction
+        turbulenceIntensity(const turbulenceIntensity&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const turbulenceIntensity&);
+        void operator=(const turbulenceIntensity&) = delete;
 
 
 public:

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -54,7 +54,7 @@ class ensightPartCells
     // Private Member Functions
 
         //- Disallow default bitwise assignment
-        void operator=(const ensightPartCells&);
+        void operator=(const ensightPartCells&) = delete;
 
         //- Classify the cell types, set elemLists.
         void classify
@@ -134,7 +134,7 @@ public:
             const cellZone&
         );
 
-        //- Construct as copy
+        //- Copy constructor
         ensightPartCells(const ensightPartCells&);
 
         //- Reconstruct part characteristics (eg, element types) from Istream

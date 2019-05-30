@@ -139,11 +139,11 @@ class fvDOM
         //- Initialise
         void initialise();
 
-        //- Disallow default bitwise copy construct
-        fvDOM(const fvDOM&);
+        //- Disallow default bitwise copy construction
+        fvDOM(const fvDOM&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const fvDOM&);
+        void operator=(const fvDOM&) = delete;
 
         //- Update nlack body emission
         void updateBlackBodyEmission();

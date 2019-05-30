@@ -65,11 +65,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        displacementMotionSolver(const displacementMotionSolver&);
+        //- Disallow default bitwise copy construction
+        displacementMotionSolver(const displacementMotionSolver&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const displacementMotionSolver&);
+        void operator=(const displacementMotionSolver&) = delete;
 
 public:
 

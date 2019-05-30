@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -138,11 +138,11 @@ class multiDirRefinement
         );
 
 
-        //- Disallow default bitwise copy construct
-        multiDirRefinement(const multiDirRefinement&);
+        //- Disallow default bitwise copy construction
+        multiDirRefinement(const multiDirRefinement&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const multiDirRefinement&);
+        void operator=(const multiDirRefinement&) = delete;
 
 
 public:

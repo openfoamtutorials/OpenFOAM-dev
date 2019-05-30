@@ -58,11 +58,14 @@ class inverseFaceDistanceDiffusivity
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        inverseFaceDistanceDiffusivity(const inverseFaceDistanceDiffusivity&);
+        //- Disallow default bitwise copy construction
+        inverseFaceDistanceDiffusivity
+        (
+            const inverseFaceDistanceDiffusivity&
+        ) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const inverseFaceDistanceDiffusivity&);
+        void operator=(const inverseFaceDistanceDiffusivity&) = delete;
 
 
 public:

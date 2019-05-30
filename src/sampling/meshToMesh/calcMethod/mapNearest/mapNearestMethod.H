@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2013-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2013-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -111,11 +111,11 @@ protected:
             const List<DynamicList<label>>& tgtToSrc
         ) const;
 
-        //- Disallow default bitwise copy construct
-        mapNearestMethod(const mapNearestMethod&);
+        //- Disallow default bitwise copy construction
+        mapNearestMethod(const mapNearestMethod&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const mapNearestMethod&);
+        void operator=(const mapNearestMethod&) = delete;
 
 
 public:

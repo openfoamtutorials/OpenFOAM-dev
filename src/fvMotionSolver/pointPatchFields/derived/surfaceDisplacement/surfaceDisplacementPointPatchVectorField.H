@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -123,7 +123,10 @@ private:
 
 
         //- Disallow default bitwise assignment
-        void operator=(const surfaceDisplacementPointPatchVectorField&);
+        void operator=
+        (
+            const surfaceDisplacementPointPatchVectorField&
+        ) = delete;
 
 public:
 
@@ -157,7 +160,7 @@ public:
             const pointPatchFieldMapper&
         );
 
-        //- Construct as copy
+        //- Copy constructor
         surfaceDisplacementPointPatchVectorField
         (
             const surfaceDisplacementPointPatchVectorField&
@@ -175,7 +178,7 @@ public:
             );
         }
 
-        //- Construct as copy setting internal field reference
+        //- Copy constructor setting internal field reference
         surfaceDisplacementPointPatchVectorField
         (
             const surfaceDisplacementPointPatchVectorField&,

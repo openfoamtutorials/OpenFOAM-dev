@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2015-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2015-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -207,11 +207,11 @@ class advectionDiffusion
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        advectionDiffusion(const advectionDiffusion&);
+        //- Disallow default bitwise copy construction
+        advectionDiffusion(const advectionDiffusion&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const advectionDiffusion&);
+        void operator=(const advectionDiffusion&) = delete;
 
 
 public:

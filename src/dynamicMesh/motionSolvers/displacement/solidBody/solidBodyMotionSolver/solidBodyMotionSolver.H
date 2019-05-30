@@ -66,11 +66,11 @@ class solidBodyMotionSolver
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        solidBodyMotionSolver(const solidBodyMotionSolver&);
+        //- Disallow default bitwise copy construction
+        solidBodyMotionSolver(const solidBodyMotionSolver&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const solidBodyMotionSolver&);
+        void operator=(const solidBodyMotionSolver&) = delete;
 
 
 public:

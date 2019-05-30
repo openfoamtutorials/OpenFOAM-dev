@@ -127,11 +127,11 @@ private:
         //- Maps current level with base patch
         void mapBaseToTopAgglom(const label fineLevelIndex);
 
-        //- Disallow default bitwise copy construct
-        pairPatchAgglomeration(const pairPatchAgglomeration&);
+        //- Disallow default bitwise copy construction
+        pairPatchAgglomeration(const pairPatchAgglomeration&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const pairPatchAgglomeration&);
+        void operator=(const pairPatchAgglomeration&) = delete;
 
 
 public:

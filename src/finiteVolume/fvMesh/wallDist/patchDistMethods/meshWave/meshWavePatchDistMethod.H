@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -86,11 +86,11 @@ class meshWave
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        meshWave(const meshWave&);
+        //- Disallow default bitwise copy construction
+        meshWave(const meshWave&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const meshWave&);
+        void operator=(const meshWave&) = delete;
 
 
 public:

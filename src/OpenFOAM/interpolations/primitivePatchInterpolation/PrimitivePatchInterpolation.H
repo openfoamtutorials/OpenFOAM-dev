@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -68,13 +68,6 @@ class PrimitivePatchInterpolation
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        PrimitivePatchInterpolation(const PrimitivePatchInterpolation&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const PrimitivePatchInterpolation&);
-
-
         //- Face-to-point weights
         const scalarListList& faceToPointWeights() const;
 
@@ -97,6 +90,12 @@ public:
 
         //- Construct from PrimitivePatch
         PrimitivePatchInterpolation(const Patch& p);
+
+        //- Disallow default bitwise copy construction
+        PrimitivePatchInterpolation
+        (
+            const PrimitivePatchInterpolation&
+        ) = delete;
 
 
     //- Destructor
@@ -146,6 +145,12 @@ public:
 
         //- Do what is necessary if the mesh has moved
         bool movePoints();
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const PrimitivePatchInterpolation&) = delete;
 };
 
 

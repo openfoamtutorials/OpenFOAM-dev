@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2016-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2016-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -74,11 +74,11 @@ class writeCellCentres
 {
     // Private member functions
 
-        //- Disallow default bitwise copy construct
-        writeCellCentres(const writeCellCentres&);
+        //- Disallow default bitwise copy construction
+        writeCellCentres(const writeCellCentres&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const writeCellCentres&);
+        void operator=(const writeCellCentres&) = delete;
 
 
 public:

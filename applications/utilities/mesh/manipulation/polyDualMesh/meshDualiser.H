@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -168,11 +168,11 @@ class meshDualiser
             boolList& donePFaces            // pFaces visited
         ) const;
 
-        //- Disallow default bitwise copy construct
-        meshDualiser(const meshDualiser&);
+        //- Disallow default bitwise copy construction
+        meshDualiser(const meshDualiser&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const meshDualiser&);
+        void operator=(const meshDualiser&) = delete;
 
 
 public:

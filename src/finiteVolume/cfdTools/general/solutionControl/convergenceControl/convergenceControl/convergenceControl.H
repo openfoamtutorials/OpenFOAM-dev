@@ -119,11 +119,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        convergenceControl(const convergenceControl&);
+        //- Disallow default bitwise copy construction
+        convergenceControl(const convergenceControl&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const convergenceControl&);
+        void operator=(const convergenceControl&) = delete;
 
 
 protected:

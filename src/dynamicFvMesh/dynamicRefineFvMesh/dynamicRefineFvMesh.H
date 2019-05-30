@@ -188,11 +188,11 @@ protected:
 
 private:
 
-        //- Disallow default bitwise copy construct
-        dynamicRefineFvMesh(const dynamicRefineFvMesh&);
+        //- Disallow default bitwise copy construction
+        dynamicRefineFvMesh(const dynamicRefineFvMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const dynamicRefineFvMesh&);
+        void operator=(const dynamicRefineFvMesh&) = delete;
 
 public:
 

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2017-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2017-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -55,11 +55,11 @@ class surfaceFilmModel
 {
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        surfaceFilmModel(const surfaceFilmModel&);
+        //- Disallow default bitwise copy construction
+        surfaceFilmModel(const surfaceFilmModel&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const surfaceFilmModel&);
+        void operator=(const surfaceFilmModel&) = delete;
 
 
 public:

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -71,11 +71,11 @@ class contactAngleForce
         //- Initialise
         void initialise();
 
-        //- Disallow default bitwise copy construct
-        contactAngleForce(const contactAngleForce&);
+        //- Disallow default bitwise copy construction
+        contactAngleForce(const contactAngleForce&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const contactAngleForce&);
+        void operator=(const contactAngleForce&) = delete;
 
 
 protected:

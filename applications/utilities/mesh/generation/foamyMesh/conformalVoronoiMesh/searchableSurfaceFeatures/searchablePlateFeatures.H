@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2013-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2013-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -63,11 +63,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        searchablePlateFeatures(const searchablePlateFeatures&);
+        //- Disallow default bitwise copy construction
+        searchablePlateFeatures(const searchablePlateFeatures&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const searchablePlateFeatures&);
+        void operator=(const searchablePlateFeatures&) = delete;
 
 
 public:

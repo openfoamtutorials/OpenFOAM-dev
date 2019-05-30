@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -77,11 +77,11 @@ class BSpline
 {
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        BSpline(const BSpline&);
+        //- Disallow default bitwise copy construction
+        BSpline(const BSpline&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const BSpline&);
+        void operator=(const BSpline&) = delete;
 
 
 public:

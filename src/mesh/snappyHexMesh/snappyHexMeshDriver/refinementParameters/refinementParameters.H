@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -91,11 +91,11 @@ class refinementParameters
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        refinementParameters(const refinementParameters&);
+        //- Disallow default bitwise copy construction
+        refinementParameters(const refinementParameters&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const refinementParameters&);
+        void operator=(const refinementParameters&) = delete;
 
 
 public:

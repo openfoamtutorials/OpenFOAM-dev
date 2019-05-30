@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2016-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2016-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -87,11 +87,11 @@ class moleFractions
         //- Calculate the mole fraction fields
         virtual void calculateMoleFractions();
 
-        //- Disallow default bitwise copy construct
-        moleFractions(const moleFractions&);
+        //- Disallow default bitwise copy construction
+        moleFractions(const moleFractions&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const moleFractions&);
+        void operator=(const moleFractions&) = delete;
 
 
 public:

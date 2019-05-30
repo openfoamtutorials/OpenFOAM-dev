@@ -195,12 +195,6 @@ private:
 
     // Private Member Functions
 
-        //- Disallow construct as copy
-        polyMesh(const polyMesh&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const polyMesh&);
-
         //- Initialise the polyMesh from the primitive data
         void initMesh();
 
@@ -324,34 +318,35 @@ public:
         //- Construct from IOobject
         explicit polyMesh(const IOobject& io);
 
-        //- Construct from IOobject or from components.
+        //- Move construct from IOobject or from components.
         //  Boundary is added using addPatches() member function
         polyMesh
         (
             const IOobject& io,
-            const Xfer<pointField>& points,
-            const Xfer<faceList>& faces,
-            const Xfer<labelList>& owner,
-            const Xfer<labelList>& neighbour,
+            pointField&& points,
+            faceList&& faces,
+            labelList&& owner,
+            labelList&& neighbour,
             const bool syncPar = true
         );
 
-        //- Construct without boundary with cells rather than owner/neighbour.
+        //- Move construct without boundary with cells rather than
+        //  owner/neighbour.
         //  Boundary is added using addPatches() member function
         polyMesh
         (
             const IOobject& io,
-            const Xfer<pointField>& points,
-            const Xfer<faceList>& faces,
-            const Xfer<cellList>& cells,
+            pointField&& points,
+            faceList&& faces,
+            cellList&& cells,
             const bool syncPar = true
         );
 
-        //- Construct from cell shapes
+        //- Move construct from cell shapes
         polyMesh
         (
             const IOobject& io,
-            const Xfer<pointField>& points,
+            pointField&& points,
             const cellShapeList& shapes,
             const faceListList& boundaryFaces,
             const wordList& boundaryPatchNames,
@@ -362,12 +357,12 @@ public:
             const bool syncPar = true
         );
 
-        //- Construct from cell shapes with patch information in dictionary
+        //- Move construct from cell shapes with patch information in dictionary
         //  format.
         polyMesh
         (
             const IOobject& io,
-            const Xfer<pointField>& points,
+            pointField&& points,
             const cellShapeList& shapes,
             const faceListList& boundaryFaces,
             const wordList& boundaryPatchNames,
@@ -376,6 +371,9 @@ public:
             const word& defaultBoundaryPatchType,
             const bool syncPar = true
         );
+
+        //- Disallow construct as copy
+        polyMesh(const polyMesh&);
 
 
     //- Destructor
@@ -621,10 +619,10 @@ public:
             //  validBoundary=false
             void resetPrimitives
             (
-                const Xfer<pointField>& points,
-                const Xfer<faceList>& faces,
-                const Xfer<labelList>& owner,
-                const Xfer<labelList>& neighbour,
+                pointField&& points,
+                faceList&& faces,
+                labelList&& owner,
+                labelList&& neighbour,
                 const labelList& patchSizes,
                 const labelList& patchStarts,
                 const bool validBoundary = true
@@ -749,6 +747,12 @@ public:
                 const point& p,
                 const cellDecomposition = CELL_TETS
             ) const;
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const polyMesh&) = delete;
 };
 
 

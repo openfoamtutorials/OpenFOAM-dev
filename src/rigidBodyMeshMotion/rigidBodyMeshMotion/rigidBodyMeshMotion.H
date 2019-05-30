@@ -124,14 +124,17 @@ class rigidBodyMeshMotion
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
+        //- Disallow default bitwise copy construction
         rigidBodyMeshMotion
         (
             const rigidBodyMeshMotion&
         );
 
         //- Disallow default bitwise assignment
-        void operator=(const rigidBodyMeshMotion&);
+        void operator=(const rigidBodyMeshMotion&) = delete;
+
+        //- To avoid warning from clang
+        using RBD::rigidBodyMotion::write;
 
 
 public:

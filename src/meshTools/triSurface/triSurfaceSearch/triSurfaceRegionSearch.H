@@ -79,11 +79,11 @@ class triSurfaceRegionSearch
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        triSurfaceRegionSearch(const triSurfaceRegionSearch&);
+        //- Disallow default bitwise copy construction
+        triSurfaceRegionSearch(const triSurfaceRegionSearch&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const triSurfaceRegionSearch&);
+        void operator=(const triSurfaceRegionSearch&) = delete;
 
 
 public:

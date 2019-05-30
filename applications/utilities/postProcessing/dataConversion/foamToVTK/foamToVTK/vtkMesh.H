@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -71,11 +71,11 @@ class vtkMesh
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        vtkMesh(const vtkMesh&);
+        //- Disallow default bitwise copy construction
+        vtkMesh(const vtkMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const vtkMesh&);
+        void operator=(const vtkMesh&) = delete;
 
 
 public:

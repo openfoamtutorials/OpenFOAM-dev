@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -147,11 +147,11 @@ class kineticTheoryModel
         void correctNut()
         {}
 
-        //- Disallow default bitwise copy construct
-        kineticTheoryModel(const kineticTheoryModel&);
+        //- Disallow default bitwise copy construction
+        kineticTheoryModel(const kineticTheoryModel&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const kineticTheoryModel&);
+        void operator=(const kineticTheoryModel&) = delete;
 
 
 public:

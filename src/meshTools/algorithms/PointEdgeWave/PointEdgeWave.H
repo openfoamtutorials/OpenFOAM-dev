@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -209,11 +209,11 @@ class PointEdgeWave
             label handleCollocatedPoints();
 
 
-        //- Disallow default bitwise copy construct
-        PointEdgeWave(const PointEdgeWave&);
+        //- Disallow default bitwise copy construction
+        PointEdgeWave(const PointEdgeWave&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const PointEdgeWave&);
+        void operator=(const PointEdgeWave&) = delete;
 
 
 public:

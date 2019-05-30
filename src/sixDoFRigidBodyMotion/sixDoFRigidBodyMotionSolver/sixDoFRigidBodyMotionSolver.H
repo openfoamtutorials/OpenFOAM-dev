@@ -92,14 +92,14 @@ class sixDoFRigidBodyMotionSolver
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
+        //- Disallow default bitwise copy construction
         sixDoFRigidBodyMotionSolver
         (
             const sixDoFRigidBodyMotionSolver&
         );
 
         //- Disallow default bitwise assignment
-        void operator=(const sixDoFRigidBodyMotionSolver&);
+        void operator=(const sixDoFRigidBodyMotionSolver&) = delete;
 
 
 public:

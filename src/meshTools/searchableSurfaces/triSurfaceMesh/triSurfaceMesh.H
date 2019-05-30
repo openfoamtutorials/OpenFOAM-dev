@@ -157,11 +157,11 @@ class triSurfaceMesh
             const pointIndexHitList& hitInfo
         ) const;
 
-        //- Disallow default bitwise copy construct
-        triSurfaceMesh(const triSurfaceMesh&);
+        //- Disallow default bitwise copy construction
+        triSurfaceMesh(const triSurfaceMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const triSurfaceMesh&);
+        void operator=(const triSurfaceMesh&) = delete;
 
 
 public:

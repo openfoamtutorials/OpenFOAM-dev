@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -151,11 +151,11 @@ class PatchEdgeFaceWave
         //- Update coupled edges
         void syncEdges();
 
-        //- Disallow default bitwise copy construct
-        PatchEdgeFaceWave(const PatchEdgeFaceWave&);
+        //- Disallow default bitwise copy construction
+        PatchEdgeFaceWave(const PatchEdgeFaceWave&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const PatchEdgeFaceWave&);
+        void operator=(const PatchEdgeFaceWave&) = delete;
 
 
 public:

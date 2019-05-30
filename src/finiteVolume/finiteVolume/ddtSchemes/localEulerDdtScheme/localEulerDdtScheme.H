@@ -117,11 +117,11 @@ class localEulerDdtScheme
 {
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        localEulerDdtScheme(const localEulerDdtScheme&);
+        //- Disallow default bitwise copy construction
+        localEulerDdtScheme(const localEulerDdtScheme&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const localEulerDdtScheme&);
+        void operator=(const localEulerDdtScheme&) = delete;
 
         //- Return the reciprocal of the local time-step
         const volScalarField& localRDeltaT() const;

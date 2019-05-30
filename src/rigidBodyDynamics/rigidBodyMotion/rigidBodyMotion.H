@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2016-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2016-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -104,7 +104,7 @@ class rigidBodyMotion
         rigidBodyMotion(const rigidBodyMotion&);
 
         //- Disallow default bitwise assignment
-        void operator=(const rigidBodyMotion&);
+        void operator=(const rigidBodyMotion&) = delete;
 
 
 public:
@@ -214,7 +214,7 @@ public:
 
 
         //- Write
-        void write(Ostream&) const;
+        virtual void write(Ostream&) const;
 
         //- Read coefficients dictionary and update system parameters,
         //  constraints and restraints but not the current state

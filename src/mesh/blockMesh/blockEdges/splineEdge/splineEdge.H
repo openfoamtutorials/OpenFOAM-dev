@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -56,11 +56,11 @@ class splineEdge
 {
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        splineEdge(const splineEdge&);
+        //- Disallow default bitwise copy construction
+        splineEdge(const splineEdge&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const splineEdge&);
+        void operator=(const splineEdge&) = delete;
 
 
 public:

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -84,11 +84,11 @@ protected:
             const scalarField& err
         ) const;
 
-        //- Disallow default bitwise copy construct
-        ODESolver(const ODESolver&);
+        //- Disallow default bitwise copy construction
+        ODESolver(const ODESolver&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const ODESolver&);
+        void operator=(const ODESolver&) = delete;
 
 
 public:

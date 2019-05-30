@@ -75,11 +75,11 @@ class pointFieldReconstructor
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        pointFieldReconstructor(const pointFieldReconstructor&);
+        //- Disallow default bitwise copy construction
+        pointFieldReconstructor(const pointFieldReconstructor&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const pointFieldReconstructor&);
+        void operator=(const pointFieldReconstructor&) = delete;
 
 
 public:

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -70,11 +70,11 @@ class rawTopoChangerFvMesh
         template<class Type, template<class> class PatchField, class GeoMesh>
         void zeroUnmappedValues(const PackedBoolList&) const;
 
-        //- Disallow default bitwise copy construct
-        rawTopoChangerFvMesh(const rawTopoChangerFvMesh&);
+        //- Disallow default bitwise copy construction
+        rawTopoChangerFvMesh(const rawTopoChangerFvMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const rawTopoChangerFvMesh&);
+        void operator=(const rawTopoChangerFvMesh&) = delete;
 
 public:
 

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -304,13 +304,6 @@ class globalMeshData
             void calcGlobalCoPointSlaves() const;
 
 
-        //- Disallow default bitwise copy construct
-        globalMeshData(const globalMeshData&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const globalMeshData&);
-
-
 public:
 
     // Public class
@@ -350,6 +343,9 @@ public:
 
         //- Construct from mesh, derive rest (does parallel communication!)
         globalMeshData(const polyMesh& mesh);
+
+        //- Disallow default bitwise copy construction
+        globalMeshData(const globalMeshData&) = delete;
 
 
     //- Destructor
@@ -614,6 +610,12 @@ public:
             //  full parallel analysis to determine shared points and
             //  boundaries.
             void updateMesh();
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const globalMeshData&) = delete;
 };
 
 

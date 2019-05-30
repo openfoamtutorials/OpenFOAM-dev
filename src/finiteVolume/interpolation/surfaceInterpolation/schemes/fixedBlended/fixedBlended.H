@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -72,11 +72,11 @@ class fixedBlended
         tmp<surfaceInterpolationScheme<Type>> tScheme2_;
 
 
-        //- Disallow default bitwise copy construct
-        fixedBlended(const fixedBlended&);
+        //- Disallow default bitwise copy construction
+        fixedBlended(const fixedBlended&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const fixedBlended&);
+        void operator=(const fixedBlended&) = delete;
 
 
 public:

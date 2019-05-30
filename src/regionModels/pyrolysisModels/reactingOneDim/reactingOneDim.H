@@ -61,11 +61,11 @@ private:
 
     // Private member functions
 
-        //- Disallow default bitwise copy construct
-        reactingOneDim(const reactingOneDim&);
+        //- Disallow default bitwise copy construction
+        reactingOneDim(const reactingOneDim&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const reactingOneDim&);
+        void operator=(const reactingOneDim&) = delete;
 
         //- Read model controls
         void readReactingOneDimControls();

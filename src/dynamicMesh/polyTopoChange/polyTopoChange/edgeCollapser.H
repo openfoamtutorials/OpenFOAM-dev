@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -235,11 +235,11 @@ private:
             face& f
         ) const;
 
-        //- Disallow default bitwise copy construct
-        edgeCollapser(const edgeCollapser&);
+        //- Disallow default bitwise copy construction
+        edgeCollapser(const edgeCollapser&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const edgeCollapser&);
+        void operator=(const edgeCollapser&) = delete;
 
 
 public:

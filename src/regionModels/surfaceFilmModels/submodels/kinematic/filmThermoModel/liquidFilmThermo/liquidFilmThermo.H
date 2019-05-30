@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2013-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2013-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -89,11 +89,11 @@ protected:
         //- Initialise the liquid pointer
         void initLiquid(const dictionary& dict);
 
-        //- Disallow default bitwise copy construct
-        liquidFilmThermo(const liquidFilmThermo&);
+        //- Disallow default bitwise copy construction
+        liquidFilmThermo(const liquidFilmThermo&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const liquidFilmThermo&);
+        void operator=(const liquidFilmThermo&) = delete;
 
 
 public:

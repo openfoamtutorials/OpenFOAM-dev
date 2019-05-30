@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2015-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2015-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -55,11 +55,11 @@ class saturationModel
 {
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        saturationModel(const saturationModel&);
+        //- Disallow default bitwise copy construction
+        saturationModel(const saturationModel&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const saturationModel&);
+        void operator=(const saturationModel&) = delete;
 
 
 public:

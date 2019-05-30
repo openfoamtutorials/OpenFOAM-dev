@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -104,9 +104,6 @@ class CSV
         //- Read the next value from the split string
         Type readValue(const List<string>&);
 
-        //- Disallow default bitwise assignment
-        void operator=(const CSV<Type>&);
-
 
 public:
 
@@ -138,6 +135,12 @@ public:
 
         //- Write in dictionary format
         virtual void writeData(Ostream& os) const;
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const CSV<Type>&) = delete;
 };
 
 

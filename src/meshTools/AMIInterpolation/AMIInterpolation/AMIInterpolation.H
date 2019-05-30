@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -168,11 +168,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        AMIInterpolation(const AMIInterpolation&);
+        //- Disallow default bitwise copy construction
+        AMIInterpolation(const AMIInterpolation&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const AMIInterpolation&);
+        void operator=(const AMIInterpolation&) = delete;
 
 
         // Parallel functionality

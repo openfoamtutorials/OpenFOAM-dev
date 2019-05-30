@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -61,21 +61,16 @@ class wedgeMatcher
         static const label maxVertPerFace;
 
 
-    // Private Member Functions
-
-        //- Disallow default bitwise copy construct
-        wedgeMatcher(const wedgeMatcher&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const wedgeMatcher&);
-
-
 public:
 
     // Constructors
 
         //- Construct null
         wedgeMatcher();
+
+        //- Disallow default bitwise copy construction
+        wedgeMatcher(const wedgeMatcher&) = delete;
+
 
     //- Destructor
     ~wedgeMatcher();
@@ -121,6 +116,12 @@ public:
             const label celli,
             cellShape& shape
         );
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const wedgeMatcher&) = delete;
 };
 
 

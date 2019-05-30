@@ -63,11 +63,11 @@ class inverseDistanceDiffusivity
         //- Return patch-cell-centre distance field
         tmp<scalarField> y() const;
 
-        //- Disallow default bitwise copy construct
-        inverseDistanceDiffusivity(const inverseDistanceDiffusivity&);
+        //- Disallow default bitwise copy construction
+        inverseDistanceDiffusivity(const inverseDistanceDiffusivity&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const inverseDistanceDiffusivity&);
+        void operator=(const inverseDistanceDiffusivity&) = delete;
 
 
 public:

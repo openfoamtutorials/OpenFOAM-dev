@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2016-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2016-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -76,11 +76,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        laminarModel(const laminarModel&);
+        //- Disallow default bitwise copy construction
+        laminarModel(const laminarModel&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const laminarModel&);
+        void operator=(const laminarModel&) = delete;
 
 
 public:

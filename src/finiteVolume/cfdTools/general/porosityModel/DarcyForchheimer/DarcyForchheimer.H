@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2012-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2012-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -118,11 +118,11 @@ class DarcyForchheimer
             const vectorField& U
         ) const;
 
-        //- Disallow default bitwise copy construct
-        DarcyForchheimer(const DarcyForchheimer&);
+        //- Disallow default bitwise copy construction
+        DarcyForchheimer(const DarcyForchheimer&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const DarcyForchheimer&);
+        void operator=(const DarcyForchheimer&) = delete;
 
 
 public:

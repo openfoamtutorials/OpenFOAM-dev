@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -80,16 +80,6 @@ class processorGAMGInterfaceField
             mutable Field<scalar> scalarReceiveBuf_;
 
 
-
-    // Private Member Functions
-
-        //- Disallow default bitwise copy construct
-        processorGAMGInterfaceField(const processorGAMGInterfaceField&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const processorGAMGInterfaceField&);
-
-
 public:
 
     //- Runtime type information
@@ -112,6 +102,12 @@ public:
             const bool doTransform,
             const int rank
         );
+
+        //- Disallow default bitwise copy construction
+        processorGAMGInterfaceField
+        (
+            const processorGAMGInterfaceField&
+        ) = delete;
 
 
     //- Destructor
@@ -189,6 +185,12 @@ public:
             {
                 return rank_;
             }
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const processorGAMGInterfaceField&) = delete;
 };
 
 

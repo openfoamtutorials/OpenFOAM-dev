@@ -59,14 +59,14 @@ class displacementMeshMoverMotionSolver
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
+        //- Disallow default bitwise copy construction
         displacementMeshMoverMotionSolver
         (
             const displacementMeshMoverMotionSolver&
         );
 
         //- Disallow default bitwise assignment
-        void operator=(const displacementMeshMoverMotionSolver&);
+        void operator=(const displacementMeshMoverMotionSolver&) = delete;
 
 
 public:

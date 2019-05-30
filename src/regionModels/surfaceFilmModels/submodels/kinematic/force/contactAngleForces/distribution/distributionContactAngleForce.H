@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2017-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2017-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -71,11 +71,14 @@ class distributionContactAngleForce
 
     // Private member functions
 
-        //- Disallow default bitwise copy construct
-        distributionContactAngleForce(const distributionContactAngleForce&);
+        //- Disallow default bitwise copy construction
+        distributionContactAngleForce
+        (
+            const distributionContactAngleForce&
+        ) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const distributionContactAngleForce&);
+        void operator=(const distributionContactAngleForce&) = delete;
 
 
 protected:

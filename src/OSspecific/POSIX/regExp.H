@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -69,11 +69,11 @@ class regExp
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        regExp(const regExp&);
+        //- Disallow default bitwise copy construction
+        regExp(const regExp&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const regExp&);
+        void operator=(const regExp&) = delete;
 
         //- Return true if it matches and sets the sub-groups matched.
         //  Templated to support both std::string and Foam::string

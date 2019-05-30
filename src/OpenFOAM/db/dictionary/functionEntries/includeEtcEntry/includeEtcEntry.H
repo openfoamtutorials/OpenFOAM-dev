@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2015-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2015-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -81,12 +81,6 @@ class includeEtcEntry
 {
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        includeEtcEntry(const includeEtcEntry&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const includeEtcEntry&);
-
         //- Expand include fileName and return
         static fileName includeEtcFileName
         (
@@ -107,6 +101,12 @@ public:
     ClassName("includeEtc");
 
 
+    // Constructors
+
+        //- Disallow default bitwise copy construction
+        includeEtcEntry(const includeEtcEntry&) = delete;
+
+
     // Member Functions
 
         //- Execute the functionEntry in a sub-dict context
@@ -119,6 +119,12 @@ public:
             primitiveEntry&,
             Istream&
         );
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const includeEtcEntry&) = delete;
 };
 
 

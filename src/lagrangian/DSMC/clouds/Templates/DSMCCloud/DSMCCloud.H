@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -182,11 +182,11 @@ class DSMCCloud
         //- Calculate the volume field data
         void calculateFields();
 
-        //- Disallow default bitwise copy construct
-        DSMCCloud(const DSMCCloud&);
+        //- Disallow default bitwise copy construction
+        DSMCCloud(const DSMCCloud&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const DSMCCloud&);
+        void operator=(const DSMCCloud&) = delete;
 
 
 public:

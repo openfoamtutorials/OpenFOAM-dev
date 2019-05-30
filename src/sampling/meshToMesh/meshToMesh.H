@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2012-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2012-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -253,11 +253,11 @@ private:
             ) const;
 
 
-        //- Disallow default bitwise copy construct
-        meshToMesh(const meshToMesh&);
+        //- Disallow default bitwise copy construction
+        meshToMesh(const meshToMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const meshToMesh&);
+        void operator=(const meshToMesh&) = delete;
 
 
 public:

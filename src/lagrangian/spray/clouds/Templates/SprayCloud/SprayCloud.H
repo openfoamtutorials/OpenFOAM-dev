@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -87,11 +87,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        SprayCloud(const SprayCloud&);
+        //- Disallow default bitwise copy construction
+        SprayCloud(const SprayCloud&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const SprayCloud&);
+        void operator=(const SprayCloud&) = delete;
 
 
 protected:

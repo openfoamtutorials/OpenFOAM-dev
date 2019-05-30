@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -92,11 +92,11 @@ class reducedUnits
 
         void calcRefValues();
 
-        //- Disallow default bitwise copy construct
-        reducedUnits(const reducedUnits&);
+        //- Disallow default bitwise copy construction
+        reducedUnits(const reducedUnits&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const reducedUnits&);
+        void operator=(const reducedUnits&) = delete;
 
 
 public:

@@ -57,11 +57,14 @@ class motionDirectionalDiffusivity
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        motionDirectionalDiffusivity(const motionDirectionalDiffusivity&);
+        //- Disallow default bitwise copy construction
+        motionDirectionalDiffusivity
+        (
+            const motionDirectionalDiffusivity&
+        ) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const motionDirectionalDiffusivity&);
+        void operator=(const motionDirectionalDiffusivity&) = delete;
 
 
 public:

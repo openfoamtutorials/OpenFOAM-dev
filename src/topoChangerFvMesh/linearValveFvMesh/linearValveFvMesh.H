@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -62,11 +62,11 @@ class linearValveFvMesh
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        linearValveFvMesh(const linearValveFvMesh&);
+        //- Disallow default bitwise copy construction
+        linearValveFvMesh(const linearValveFvMesh&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const linearValveFvMesh&);
+        void operator=(const linearValveFvMesh&) = delete;
 
 
         //- Add linearValve zones and modifiers

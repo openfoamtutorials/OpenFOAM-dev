@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -64,11 +64,11 @@ class PhiScheme
 {
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        PhiScheme(const PhiScheme&);
+        //- Disallow default bitwise copy construction
+        PhiScheme(const PhiScheme&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const PhiScheme&);
+        void operator=(const PhiScheme&) = delete;
 
 
 public:

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -61,21 +61,16 @@ class tetMatcher
         static const label maxVertPerFace;
 
 
-    // Private Member Functions
-
-        //- Disallow default bitwise copy construct
-        tetMatcher(const tetMatcher&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const tetMatcher&);
-
-
 public:
 
     // Constructors
 
         //- Construct null
         tetMatcher();
+
+        //- Disallow default bitwise copy construction
+        tetMatcher(const tetMatcher&) = delete;
+
 
     //- Destructor
     ~tetMatcher();
@@ -121,6 +116,12 @@ public:
             const label celli,
             cellShape& shape
         );
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const tetMatcher&) = delete;
 };
 
 

@@ -78,14 +78,14 @@ class interpolatingSolidBodyMotionSolver
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
+        //- Disallow default bitwise copy construction
         interpolatingSolidBodyMotionSolver
         (
             const interpolatingSolidBodyMotionSolver&
         );
 
         //- Disallow default bitwise assignment
-        void operator=(const interpolatingSolidBodyMotionSolver&);
+        void operator=(const interpolatingSolidBodyMotionSolver&) = delete;
 
 
 public:

@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -89,11 +89,11 @@ private:
         ) const;
 
 
-        //- Disallow default bitwise copy construct
-        searchableSphere(const searchableSphere&);
+        //- Disallow default bitwise copy construction
+        searchableSphere(const searchableSphere&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const searchableSphere&);
+        void operator=(const searchableSphere&) = delete;
 
 
 public:

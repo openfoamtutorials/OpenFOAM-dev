@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -71,11 +71,11 @@ private:
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        dimFieldDecomposer(const dimFieldDecomposer&);
+        //- Disallow default bitwise copy construction
+        dimFieldDecomposer(const dimFieldDecomposer&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const dimFieldDecomposer&);
+        void operator=(const dimFieldDecomposer&) = delete;
 
 
 public:

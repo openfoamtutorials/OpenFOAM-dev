@@ -68,11 +68,11 @@ class setTimeStepFunctionObject
 
     // Private member functions
 
-        //- Disallow default bitwise copy construct
-        setTimeStepFunctionObject(const setTimeStepFunctionObject&);
+        //- Disallow default bitwise copy construction
+        setTimeStepFunctionObject(const setTimeStepFunctionObject&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const setTimeStepFunctionObject&);
+        void operator=(const setTimeStepFunctionObject&) = delete;
 
 
 public:

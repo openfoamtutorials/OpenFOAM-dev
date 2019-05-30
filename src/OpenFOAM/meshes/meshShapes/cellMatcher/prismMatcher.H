@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -61,21 +61,16 @@ class prismMatcher
         static const label maxVertPerFace;
 
 
-    // Private Member Functions
-
-        //- Disallow default bitwise copy construct
-        prismMatcher(const prismMatcher&);
-
-        //- Disallow default bitwise assignment
-        void operator=(const prismMatcher&);
-
-
 public:
 
     // Constructors
 
         //- Construct
         prismMatcher();
+
+        //- Disallow default bitwise copy construction
+        prismMatcher(const prismMatcher&) = delete;
+
 
     //- Destructor
     ~prismMatcher();
@@ -121,6 +116,12 @@ public:
             const label celli,
             cellShape& shape
         );
+
+
+    // Member Operators
+
+        //- Disallow default bitwise assignment
+        void operator=(const prismMatcher&) = delete;
 };
 
 

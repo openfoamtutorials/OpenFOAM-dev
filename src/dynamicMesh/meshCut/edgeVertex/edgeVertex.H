@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
-    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2019 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -60,11 +60,11 @@ class edgeVertex
 
     // Private Member Functions
 
-        //- Disallow default bitwise copy construct
-        edgeVertex(const edgeVertex&);
+        //- Disallow default bitwise copy construction
+        edgeVertex(const edgeVertex&) = delete;
 
         //- Disallow default bitwise assignment
-        void operator=(const edgeVertex&);
+        void operator=(const edgeVertex&) = delete;
 
 
 public:
